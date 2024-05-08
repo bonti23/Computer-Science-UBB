@@ -1,0 +1,1 @@
+TAD Matrice - reprezentare sub forma unei matrice rare, folosind un vector dinamic de triplete de forma ,linie, coloana, valoare> (valoare!=0), memorate in ordine lexicografica dupa (linie, coloana).
