@@ -1,0 +1,1 @@
+TAD Colectie cu elemente de tip compaabil (TElement=TComparabil) - reprezentare folosind o LSI de perechi de forma (element, frecventa) ordonate in raport cu relatia de ordine r<= intre elemente.
