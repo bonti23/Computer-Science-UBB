@@ -1,0 +1,1 @@
+TAD MultiDictionar ordonat - reprezentare sub forma unei LSI de chei distincte ordonate in raport cu relatia de ordine r intre chei. Fiecare cheie va memora o LSI cu valorile asociate cheii.
