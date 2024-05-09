@@ -1,0 +1,6 @@
+Here are 5 labs according to every practical exam.
+1st lab => C programming in the UNIX command line
+2nd lab => Grep/Sed/Awk 
+3rd lab => UNIX Shell Programming 
+4th lab => UNIX Processes 
+5th lab => UNIX POSIX Threads
