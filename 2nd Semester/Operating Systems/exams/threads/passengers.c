@@ -35,5 +35,6 @@ int main(int argc, char** argv){
 	}
 	printf("pilotul poate decola!\n");
 	pthread_mutex_destroy(&mutex);//distrugerea mutexului
+	pthread_cond_destroy(&cond);
 	return 0;
 }
