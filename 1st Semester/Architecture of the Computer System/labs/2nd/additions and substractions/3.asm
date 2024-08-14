@@ -23,7 +23,7 @@ segment code use32 class=code
         ; ...
         mov al, [c]
         add al, [d]
-        mov bl, a
+        mov bl, [a]
         add bl, [d]
         sub al, bl
         add al, [b]
