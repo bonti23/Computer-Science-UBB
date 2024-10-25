@@ -1,51 +1,51 @@
-Create database Cabinet_Stomatologic
+Create database CabinetStomatologic
 go
-use Cabinet_Stomatologic 
+use CabinetStomatologic 
 go
 
 CREATE TABLE Sectii
 (
 IDSectie INT PRIMARY KEY IDENTITY,
-Denumire VARCHAR(50),
-NumarMedici INT
+Denumire VARCHAR(50) NOT NULL,
+NumarMedici INT NOT NULL
 )
 
 CREATE TABLE Medici
 (
 IDMedic INT PRIMARY KEY IDENTITY,
-Nume VARCHAR(50),
-Prenume VARCHAR(50),
-Telefon VARCHAR(50),
-Sectie INT FOREIGN KEY REFERENCES Sectii(IDSectie),
+Nume VARCHAR(50) NOT NULL,
+Prenume VARCHAR(50) NOT NULL,
+Telefon VARCHAR(50) NOT NULL,
+Sectie INT FOREIGN KEY REFERENCES Sectii(IDSectie) NOT NULL,
 )
 
 CREATE TABLE Asistenti
 (
 IDAsistent INT PRIMARY KEY IDENTITY,
-Nume VARCHAR(50),
-Prenume VARCHAR(50),
-Telefon VARCHAR(50),
-Medic INT FOREIGN KEY REFERENCES Medici(IDMedic) 
+Nume VARCHAR(50) NOT NULL,
+Prenume VARCHAR(50) NOT NULL,
+Telefon VARCHAR(50) NOT NULL,
+Medic INT FOREIGN KEY REFERENCES Medici(IDMedic) NOT NULL
 )
 CREATE TABLE Studenti
 (
 IDstudent INT PRIMARY KEY IDENTITY,
-Nume VARCHAR(50),
-Prenume VARCHAR(50),
-Telefon VARCHAR(50),
-Practica VARCHAR(50),
-AnAcademic INT,
-Universitate VARCHAR(50),
-Asistent INT FOREIGN KEY REFERENCES Asistenti(IDAsistent)
+Nume VARCHAR(50) NOT NULL,
+Prenume VARCHAR(50) NOT NULL,
+Telefon VARCHAR(50) NOT NULL,
+Practica VARCHAR(50) NOT NULL,
+AnAcademic INT NOT NULL,
+Universitate VARCHAR(50) NOT NULL,
+Asistent INT FOREIGN KEY REFERENCES Asistenti(IDAsistent) NOT NULL
 )
 CREATE TABLE Pacienti
 (
 IDPacient INT PRIMARY KEY IDENTITY,
 Nume VARCHAR(50) NOT NULL,
 Prenume VARCHAR(50) NOT NULL,
-Telefon VARCHAR(50),
-Email VARCHAR(50),
-Adresa VARCHAR(50)
+Telefon VARCHAR(50) NOT NULL,
+Email VARCHAR(50) NOT NULL,
+Adresa VARCHAR(50) NOT NULL
 )
 
 CREATE TABLE Incaperi
@@ -57,33 +57,33 @@ Etaj INT NOT NULL
 CREATE TABLE Ingrijitori
 (
 IDIngrijitor INT FOREIGN KEY REFERENCES Incaperi(IDIncapere),
-Nume VARCHAR(50),
-Prenume VARCHAR(50),
+Nume VARCHAR(50) NOT NULL,
+Prenume VARCHAR(50) NOT NULL,
 CONSTRAINT PKIngrijitor PRIMARY KEY(IDIngrijitor)
 )
 
 CREATE TABLE Programari
 (
 IDProgramare INT PRIMARY KEY IDENTITY,
-DataProgramare DATETIME NOT NULL,
+DataProgramare DATE NOT NULL,
 Ora TIME NOT NULL,
-Medic INT FOREIGN KEY REFERENCES Medici(IDMedic),
-Pacient INT FOREIGN KEY REFERENCES Pacienti(IDPacient),
-Incapere INT FOREIGN KEY REFERENCES Incaperi(IDIncapere)
+Medic INT FOREIGN KEY REFERENCES Medici(IDMedic) NOT NULL,
+Pacient INT FOREIGN KEY REFERENCES Pacienti(IDPacient) NOT NULL,
+Incapere INT FOREIGN KEY REFERENCES Incaperi(IDIncapere) NOT NULL
 )
 
 CREATE TABLE Tratamente
 (
 IDTratament INT PRIMARY KEY IDENTITY,
-Denumire VARCHAR(50),
-Pret INT,
-DurataMinute INT,
-Programare INT FOREIGN KEY REFERENCES Programari(IDProgramare)
+Denumire VARCHAR(50) NOT NULL,
+Pret INT NOT NULL,
+DurataMinute INT NOT NULL,
+Programare INT FOREIGN KEY REFERENCES Programari(IDProgramare) NOT NULL
 )
 
 CREATE TABLE Aparate
 (
 IDAparat INT PRIMARY KEY IDENTITY,
-Denumire VARCHAR(50),
-Tratament INT FOREIGN KEY REFERENCES Tratamente(IDTratament)
+Denumire VARCHAR(50) NOT NULL,
+Tratament INT FOREIGN KEY REFERENCES Tratamente(IDTratament) NOT NULL
 )
