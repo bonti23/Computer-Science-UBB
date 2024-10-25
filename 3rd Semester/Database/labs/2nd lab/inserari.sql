@@ -1,4 +1,4 @@
-USE Cabinet_Stomatologic
+USE CabinetStomatologic
 GO
 
 -- SECTII
