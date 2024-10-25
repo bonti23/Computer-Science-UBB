@@ -24,7 +24,7 @@ VALUES('Zimbran', 'Mihai', '0711223344', 1),
 		('Cristea', 'Ovidiu', '0756897423', 5),
 		('Popa', 'Andreea', '0719235467', 5);
 
---
+--ASISTENTI
 INSERT INTO Asistenti(Nume, Prenume, Telefon, Medic)
 VALUES('Radu', 'Bianca', '0786564636', 1),
 		('Iordache', 'Florin', '0789898999', 1),
@@ -43,6 +43,7 @@ VALUES('Radu', 'Bianca', '0786564636', 1),
         ('Mihailescu', 'Teodora', '0789456789', 12),
         ('Grigorescu', 'Raul', '0789567890', 12);
 
+--STUDENTI
 INSERT INTO Studenti(Nume, Prenume, Telefon, Practica, AnAcademic, Universitate, Asistent)
 VALUES('Popa', 'Andreea', '0781111222', 'Chirurgie', 5, 'UMFCD', 1),
        ('Vasilescu', 'Marian', '0782221333', 'Chirurgie', 5, 'UMFIH', 1),
