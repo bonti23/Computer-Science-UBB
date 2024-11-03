@@ -30,11 +30,11 @@ int main() {
   }
 
   printf("sirul : ");
-  scanf("%99s", sir);
-  //sir = htons(sir);
+  fgets(sir, sizeof(sir), stdin);
   send(c, &sir, strlen(sir)+1, 0);
   recv(c, &numar, sizeof(numar), 0);
   numar = ntohs(numar);
   printf("Numarul de spatii este %hu\n", numar);
   close(c);
+  return 0;
 }
