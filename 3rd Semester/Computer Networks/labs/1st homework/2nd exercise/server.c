@@ -4,6 +4,7 @@
 #include <netinet/in.h>
 #include <netinet/ip.h>
 #include <string.h>
+#include <unistd.h>
 
 int main() {
   int s;
@@ -37,15 +38,17 @@ int main() {
     c = accept(s, (struct sockaddr *) &client, &l);
     printf("S-a conectat un client.\n");
     // deservirea clientului
-    recv(c, &sir, sizeof(sir), MSG_WAITALL);
-    sir = ntohs(sir);
+    recv(c, &sir, sizeof(sir), 0);
     for(int i=0; sir[i]!=0; i++){
         if(sir[i]==' '){
                 numar++;
+        }
     }
     numar = htons(numar);
     send(c, &numar, sizeof(numar), 0);
     close(c);
     // sfarsitul deservirii clientului;
   }
+  close(s);
+  return 0;
 }
