@@ -1,0 +1,9 @@
+Creati o aplicatiepentru gestiunea unei liste de melodii. Melodiile (titlu, artist, gen, durata) sunt salvate intr-un fisier text care
+se incarca la pornirea aplicatiei. Creati un fisier care contine cel putin 10 melodii. Aplicatia permite:
+1. Modificare melodii. Se da titlu, artist, gen si durata in secunde si aplicatia modifica genul si durata pentru melodia specificata.
+Modificarea se reflecta imediat in fisier.
+2. In caz de eroare se afiseaza un mesaj corespunzator (daca sunt mai multe erori se afiseaza toate erorile): Durata e intreg pozitiv, 
+genul trebuie sa fie una dintre: "rock", "pop", "jazz", "altele". Trebuie sa existe o melodie cu titlu si artist specificat.
+3. Creeaza aleator melodii. Utilizatorul introduce numarul de melodii de generat, o lista de titluri si o lista de artisti. Aplicatia
+adauga melodii generate aleator si tipareste cate melodii s-au adaugat. Melodiile adaugate apar imediat in fisier.
+4. Exporta melodii sortate dupa artist si titlu intr-un fisier text.
