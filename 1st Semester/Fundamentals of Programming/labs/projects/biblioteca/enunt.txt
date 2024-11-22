@@ -1,0 +1,9 @@
+Creati o aplicatie pentru gestiunea cartilor intr-o biblioteca. Lapornirea aplicatiei se incarca toate cartile dintr-un fisier text.
+Aplicatia permite:
+1. Adauga carte. Se da: id, titlu, autor, anAparitie. Aplicatia salveaza imediat in fisier.
+2. Stergere carti. Se da o cifra si se sterg toate cartile pentru care an Aparitie contine cifra data. Modificarile se vad imediat in
+fisier.
+3. Filtrare carti dupa titlu si anAparitie. La pornirea aplicatiei filtrul este setat pe sir vid si -1. Utilizatorul poate modifica filtrul 
+oricand, folosind o comanda din meniul aplicatiei (da un alt text si alt numar). La afisare sunt incluse produsele care in titlu contin
+textul si si au anul ,ai mic decat anul din filtru. Filtrarea nu afecteaza cartile din fisier.
+4. Undo ultima operatie de stergere/adaugare. Modificarea se reflecta in fisier.
