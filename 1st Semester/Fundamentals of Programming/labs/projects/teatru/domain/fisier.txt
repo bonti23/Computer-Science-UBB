@@ -1,0 +1,4 @@
+nume1,regizor1,Comedie,901
+nume2,regizor2,Drama,902
+nume3,regizor3,Satira,903
+nume4,regizor4,Altele,1800
