@@ -1,0 +1,9 @@
+1, lapte, 8
+2, paine, 10
+3, oua, 20
+4, ciocolata, 6
+5, carne, 50
+6, miere, 25
+7, lipie, 13
+8, rosii, 15
+9, castraveti, 20
