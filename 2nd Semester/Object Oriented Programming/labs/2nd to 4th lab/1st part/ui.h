@@ -1,13 +1,11 @@
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wvisibility"
-#ifndef LAB2_4_UI_H
-#define LAB2_4_UI_H
-void afisare_lista_oferte(struct ListaMea *lista);
-void menu();
-void creare_oferta_ui(struct ListaMea *lista);
-void modificare_oferta_ui(struct ListaMea *lista);
-void stergere_oferta_ui(struct ListaMea *lista);
-void ordonare_ui(struct ListaMea *lista);
+#ifndef INC_2ND_4TH_LAB_1ST_PART_UI_H
+#define INC_2ND_4TH_LAB_1ST_PART_UI_H
+void afiseaza_oferte(struct ListaMea* lista);
+void meniu();
+void creare_ui(struct ListaMea* lista);
+void modificare_ui(struct ListaMea* lista);
+void stergere_ui(struct ListaMea *lista);
+void filtreaza_ui(struct ListaMea *lista);
+void ordoneaza_ui(struct ListaMea *lista);
 void run();
-#endif //LAB2_4_UI_H
-#pragma clang diagnostic pop
+#endif //INC_2ND_4TH_LAB_1ST_PART_UI_H
