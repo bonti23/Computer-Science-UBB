@@ -1,0 +1,6 @@
+nume1, stiri, 9, plictisitor
+nume2, film, 10, interesant
+nume3, informare, 6, captivant
+nume4, stiri, 4, plictisitor
+nume5, film, 3, fain
+nume6, film, 2, plictisitor
