@@ -1,0 +1,11 @@
+Creati o aplicatie pentru gestiunea echipei de basket. Jucatorii echipei sunt salvati intr-un fisiertext, pentru fiecare jucator se vor 
+retine: nume, prenume, inaltime, post.
+1. Adaugare de jucator. Se introduce nume, prenume, inaltime, post: aplicatia salveaza jucatorul in fisier. In caz de eroare se afiseaza un mesaj 
+corespunzator (numele si prenumele nu pot fi vide, postul trebuie sa fie unul dintre extrema/ fundas/ pivot iar inaltimea nu poate fi 
+negativa).
+2. Modificare inaltime: se da: nume, prenume, inaltime. Aplicatia actualizeaza inaltimea pentru jucatorul specificat (modificarea se 
+salveaza in fisier).
+3. Aplicatia tipareste echipa constituita din jucatorii disponibili cu media de inaltime cea mai mare. O echipa valida este formata din: 
+2 fundasi, 2 extreme si un pivot.
+4. Importa jucatorii din fisier. Se introduce numele unui fisier existent care contine pe fiecare linie: nume, prenume. Aplicatia 
+genereaza aleator inaltimea si postul si se salveaza in fisier. 
