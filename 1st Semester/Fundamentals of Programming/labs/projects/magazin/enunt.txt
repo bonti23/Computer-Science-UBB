@@ -1,0 +1,11 @@
+Creați o aplicație pentru gestiunea produselor într-un magazin. La pornire aplicația încarcă toate produsele dintr-un fișier text. 
+Aplicația permite:
+1. Adăugare de produse. Se dă: id; denumire; preț, aplicația salvează imediat produsul în fișier. (1p)
+2. Șterge produse (1.5p). Se dă o cifra se șterg toate produsele pentru care id-ul produsului conține cifra data, afișează un mesaj cu 
+numărul produselor șterse.(modificările se văd imediat în fișier)
+3. Filtrare produse. Utilizatorul poate seta un filtru constând într-un text și un număr (șirul vid dacă nu mai dorește filtrarea după 
+denumire și -1 dacă nu vrea filtrarea după preț). Aplicația afișează filtru curent si lista cărților (aplicând filtru curent) după 
+acționarea oricărui element de meniu. Sunt incluse produsele care in denumire conțin textul si au prețul mai mic decât prețul din filtru. 
+Filtrarea nu afectează fișierul cu produse (2p)
+4. Undo ultima operație de ștergere. Aplicația reface ultima operație de ștergere, toate produse șterse la ștergerea anterioară sunt 
+refăcute. Modificarea se reflecta si in fișier 
