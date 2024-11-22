@@ -1,0 +1,11 @@
+Creati o aplicatie pentru gestiunea unei liste de piese de teatru (titlu, regizor, gen, durata). Piesele sunt salvate intr-un fisier 
+text care se incarca la pornirea aplicatiei. Creati un fisier care contine cel putin 10 piese de teatru. Aplicatia permite:
+1. Adauga piesa. Se da titlu, regizor, gen si durata in secunde si aplicatia adauga piesa de teatru. Modificarea se reflecta imediat si
+in fisier. In caz de eroare se afiseaza un mesaj corespunzator (daca sunt mai multe erori se afiseaza toate erorile): titlu, regizo nevid, 
+durata e intreg pozitiv, genul trebuie sa fie una dintre: "comedie", "drama", "satira", "altele".
+2. Modificare piesa. Se da titlu, regizor, gen si durata, aplicatia modifica genul si durata pentru piesa specificata. Modificarea se
+reflecta imediat si in fisier. Se aplica aceleasi reguli de validare ca si la punctul 1.
+3. Creeaza aleator piese de teatru. Utilizatorul introduce numarul de piese de generat, aplicatia adauga piese generate aleator si 
+tipareste piesele adaugate. Titlul si regizorul se genereaza aleator dupa regulile: lungime intre [8, 12], se alterneaza consoanele cu 
+vocalele si trebuie sa contina un spatiu in interior. Piesele adaugate apar imediat in fisier.
+4. Exporta piese de teatru sortate dupa regizor si titlu intr-un fisier text.
