@@ -1,0 +1,6 @@
+1, ThePlacesIveCriedInPublic, Bourne, 2018
+2, StartWithWhy, Sinek, 2020
+3, Ion, Rebreanu, 1920
+4, Moara, Slavici, 1881
+5, Enigma, Calinescu, 1938
+6, OScrisoarePierduta, Caragiale, 1883
