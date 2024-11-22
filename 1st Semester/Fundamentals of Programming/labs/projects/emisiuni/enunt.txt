@@ -1,0 +1,16 @@
+Creați o aplicație pentru gestiunea programului TV. Emisiunile( nume, tip, durata ( in ore), descriere) disponibile sunt stocate 
+intr-un fisier text. Creati n fisier cu cel putin 10 emisiuni. 
+1. Utilizatorul introduce nume, tip si emisiunea se sterge. Daca nu exista emisiunea se tipareste un mesaj de avertizare. Modificarea
+se salveaza in fisier.
+2. Utilizatorul introduce nume, tip, durata, descriere -> se actualizeaza descrierea si durata emisiunii. Daca nu exista se tipareste
+un mesaj de avertizare. Modificarea se salveaza in fisier.
+3. Utilizatorul introduce ora inceput si ora sfarsit -> aplicatia tipareste programul generat aleator (random.randint(a,b)) si salveaza 
+in format tabelar. Fiecare emisiune apare o singura data, daca nu sunt destule emisiuni disponibile se vor include reluari (se adauga
+"****" la descriere).
+4. Utilizatorul poate bloca anumite tipuri de emisiuni. Blocarea este activa tot timpul, la pornirea aplicatiei nu este nimic blocat,
+utilizatorul poate modifica oricand lista cu tipuri blocate (sau pune sir vid). Daca o emisiune are tipul continut in lista blocata el
+nu poate fi sters/ modificat/ adaugat in programul generat si aplicatia tipareste mesajul: "emisiune blocata" daca se incearca stergerea/
+modificarea.
+
+Date citite si scrise din fisier
+Arhitectura + teste si specificatii
