@@ -1,0 +1,9 @@
+Creati o aplicatie pentru gestiunea de contacte de telefon. Aplicatia salveaza contactele intr-un fisier text si permite:
+1. Adaugare de contacte. Se da id, nume, telefon si grup. Aplicatia salveaza contactul in fisier. In caz de eroare se afiseaza un mesaj 
+corespunzator. Numele nu poate fi vid, grupul trebuie sa fie una dintre: "prieteni", "familie", "job" sau "altele". Numarul de telefon
+nu poate fi vid si trebuie sa contina doar cifre. Nu se pot adauga doua numere de telefon pentru acelasi nume.
+2. Cautare numar de telefon pentru un nume dat. Utilizatorul introduce numele de contact si aplicatia tipareste datele de contact sau un 
+mesaj daca nu exista informatii pentru numele dat.
+3. Tipareste toate contactele pentru un grup dat ordonat dupa nume. Utilizatorul introduce numele grupului, aplicatia tipareste contactele
+ordonate sau un mesaj daca nu exista contacte in grupul dat.
+4. Exporta toate contactele pentru un grup dat intr-un fisier text file. Fisierul contine pe fiecare linie: nume ","telefon.
