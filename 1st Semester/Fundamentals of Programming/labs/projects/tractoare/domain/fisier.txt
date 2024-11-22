@@ -1,0 +1,8 @@
+1, denumire3, 200, audi, 23.02.2025
+2, denumire2, 100, mercedes, 15.10.2025
+3, denumire3, 500, porche, 10.10.2024
+4, denumire4, 1000, renault, 29.08.2024
+5, denumire5, 2000, rollsroyce, 10.10.2010
+6, denumire6, 1500, skoda, 12.12.2004
+7, denumire7, 2300, dacia, 24.05.2026
+8, denumire8, 2500, volkswagen, 12.12.2004
