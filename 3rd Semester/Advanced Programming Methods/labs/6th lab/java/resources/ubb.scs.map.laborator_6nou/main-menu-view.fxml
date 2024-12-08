@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="656.0" stylesheets="@css/mainMenu.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.laborator_6nou.controller.MainMenuView" style="-fx-background-color: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);">
+    <children>
+        <TableView fx:id="tableView" layoutX="35.0" layoutY="18.0" prefHeight="364.0" prefWidth="402.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-background-radius: 15;">
+            <columns>
+                <TableColumn fx:id="firstnameColumn" prefWidth="125.0" text="First Name" style="-fx-text-fill: black; -fx-font-size: 14px; -fx-alignment: CENTER;" />
+                <TableColumn fx:id="lastnameColumn" prefWidth="125.0" text="Last Name" style="-fx-text-fill: black; -fx-font-size: 14px; -fx-alignment: CENTER;" />
+                <TableColumn fx:id="sinceColumn" maxWidth="130.0" prefWidth="128.0" text="Friends since" style="-fx-text-fill: black; -fx-font-size: 14px; -fx-alignment: CENTER;" />
+            </columns>
+        </TableView>
+
+        <Button fx:id="sendRequestButton" layoutX="454.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleSendRequest" prefHeight="40.0" prefWidth="176.0" text="Add a new friend" style="-fx-background-color: white; -fx-text-fill: black; -fx-border-radius: 20; -fx-background-radius: 20;" />
+
+        <Button fx:id="acceptRequestButton" layoutX="454.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleAcceptRequest" prefHeight="40.0" prefWidth="176.0" text="Friendship request's" style="-fx-background-color: white; -fx-text-fill: black; -fx-border-radius: 20; -fx-background-radius: 20;" />
+
+        <Button fx:id="removeFriendButton" layoutX="454.0" layoutY="254.0" mnemonicParsing="false" onAction="#handleRemoveFriend" prefHeight="40.0" prefWidth="176.0" text="Delete a friend" style="-fx-background-color: white; -fx-text-fill: black; -fx-border-radius: 20; -fx-background-radius: 20;" />
+
+        <Button fx:id="removeUser" layoutX="454.0" layoutY="209.0" mnemonicParsing="false" onAction="#handleRemoveUser" prefHeight="40.0" prefWidth="176.0" text="Delete your account" style="-fx-background-color: white; -fx-text-fill: black; -fx-border-radius: 20; -fx-background-radius: 20;" />
+
+        <Button fx:id="accountSettingsButton" layoutX="454.0" layoutY="165.0" mnemonicParsing="false" onAction="#handleAccountSetting" prefHeight="40.0" prefWidth="176.0" text="Account settings" style="-fx-background-color: white; -fx-text-fill: black; -fx-border-radius: 20; -fx-background-radius: 20;" />
+
+        <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="453.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 4);">
+            <image>
+                <Image url="@images/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg" />
+            </image>
+        </ImageView>
+
+        <Label fx:id="userNameField" layoutX="513.0" layoutY="29.0" prefHeight="23.0" prefWidth="143.0" style="-fx-text-fill: white; -fx-font-size: 14;">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="514.0" layoutY="51.0" prefHeight="23.0" prefWidth="62.0" text="Online" textFill="#1f8103">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
