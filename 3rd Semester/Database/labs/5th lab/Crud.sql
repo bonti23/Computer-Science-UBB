@@ -630,3 +630,63 @@ EXEC dbo.DeleteStudent
     @IDStudent = 25;
 
 SELECT * FROM Studenti WHERE IDStudent = 25;
+
+
+--VIEWURI
+CREATE VIEW vProgramariComplete
+AS
+SELECT 
+    p.IDProgramare,
+    p.DataProgramare,
+    p.Ora,
+    pa.Nume AS NumePacient,
+    pa.Prenume AS PrenumePacient,
+    m.Nume AS NumeMedic,
+    m.Prenume AS PrenumeMedic,
+    p.Incapere
+FROM 
+    Programari p
+JOIN 
+    Pacienti pa ON p.Pacient = pa.IDPacient
+JOIN 
+    Medici m ON p.Medic = m.IDMedic;
+
+
+
+CREATE VIEW vStudentiAsistenti
+AS
+SELECT 
+    s.IDStudent,
+    s.Nume AS NumeStudent,
+    s.Prenume AS PrenumeStudent,
+    s.Practica,
+    s.AnAcademic,
+    s.Universitate,
+    a.Nume AS NumeAsistent,
+    a.Prenume AS PrenumeAsistent,
+    a.Telefon AS TelefonAsistent
+FROM 
+    Studenti s
+JOIN 
+    Asistenti a ON s.Asistent = a.IDAsistent;
+
+
+CREATE VIEW vAsistentiMedici
+AS
+SELECT 
+    a.IDAsistent,
+    a.Nume AS NumeAsistent,
+    a.Prenume AS PrenumeAsistent,
+    a.Telefon AS TelefonAsistent,
+    m.Nume AS NumeMedic,
+    m.Prenume AS PrenumeMedic,
+    m.Telefon AS TelefonMedic,
+    m.Sectie
+FROM 
+    Asistenti a
+JOIN 
+    Medici m ON a.Medic = m.IDMedic;
+
+SELECT * FROM vProgramariComplete;
+SELECT * FROM vStudentiAsistenti;
+SELECT * FROM vAsistentiMedici;
