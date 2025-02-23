@@ -1,0 +1,50 @@
+psql -U alexandrabontidean -d postgres
+
+
+
+CREATE DATABASE trenuri;
+\c trenuri
+CREATE TABLE City(id SERIAL PRIMARY KEY, nume VARCHAR(50));
+CREATE TABLE
+
+CREATE TABLE TrainStation(id SERIAL PRIMARY KEY, departureCityId INT NOT NULL, destinationCityId INT NOT NULL, FOREIGN KEY (departureCityId) REFERENCES City(id), FOREIGN KEY (destinationCityId) REFERENCES City(id));
+CREATE TABLE
+
+INSERT INTO City(nume) VALUES ('Cluj-Napoca');
+INSERT 0 1
+trenuri=> INSERT INTO City(nume) VALUES ('Vienna');
+INSERT 0 1
+trenuri=> INSERT INTO City(nume) VALUES ('Bucuresti');
+INSERT 0 1
+trenuri=> INSERT INTO City(nume) VALUES ('Oradea');
+INSERT 0 1
+trenuri=> INSERT INTO City(nume) VALUES ('Constanta');
+INSERT 0 1
+trenuri=> INSERT INTO City(nume) VALUES ('Madrid');
+INSERT 0 1
+trenuri=> INSERT INTO City(nume) VALUES ('Barcelona');
+INSERT 0 1
+trenuri=> SELECT * FROM City;
+ id |    nume
+----+-------------
+  1 | Cluj-Napoca
+  2 | Vienna
+  3 | Bucuresti
+  4 | Oradea
+  5 | Constanta
+  6 | Madrid
+  7 | Barcelona
+
+
+trenuri=> INSERT INTO TrainStation(departureCityId, destinationCityId) VALUES(1,2);
+INSERT 0 1
+trenuri=> INSERT INTO TrainStation(departureCityId, destinationCityId) VALUES(1,3);
+INSERT 0 1
+trenuri=> INSERT INTO TrainStation(departureCityId, destinationCityId) VALUES(4,5);
+INSERT 0 1
+trenuri=> SELECT * FROM TrainStation;
+ id | departurecityid | destinationcityid
+----+-----------------+-------------------
+  1 |               1 |                 2
+  2 |               1 |                 3
+  3 |               4 |                 5
