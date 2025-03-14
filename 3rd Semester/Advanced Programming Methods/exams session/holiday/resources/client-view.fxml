@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightpink;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.vacante.controller.ClientController">
+    <children>
+        <TableView fx:id="hotelTable" layoutX="16.0" layoutY="212.0" prefHeight="174.0" prefWidth="122.0">
+            <columns>
+                <TableColumn fx:id="numeHotelColoana" prefWidth="120.0" text="name" />
+            </columns>
+        </TableView>
+        <TableView fx:id="tableView" layoutY="25.0" prefHeight="141.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="hotelColoana" prefWidth="131.0" text="name" />
+                <TableColumn fx:id="locatieColoana" prefWidth="156.0" text="location" />
+                <TableColumn fx:id="startdateColoana" prefWidth="147.0" text="start date" />
+                <TableColumn fx:id="enddateColoana" prefWidth="165.0" text="end date" />
+            </columns>
+        </TableView>
+        <Text layoutX="249.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="special offers" textAlignment="CENTER" wrappingWidth="101.13671875" />
+        <Text layoutX="16.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hotels:" textAlignment="CENTER" />
+        <Button fx:id="rezervaButon" layoutX="284.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleRezerva" text="save your reservation" />
+        <DatePicker fx:id="dataPicker" layoutX="276.0" layoutY="220.0" />
+        <Text layoutX="276.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="choose the date:" />
+        <TextField fx:id="nrNoptiField" layoutX="276.0" layoutY="286.0" />
+        <Text layoutX="276.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="no. nights:" wrappingWidth="69.83203125" />
+    </children>
+</AnchorPane>
