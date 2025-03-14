@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightpink;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.faptebune.controller.SignUpController">
+    <children>
+        <Text layoutX="148.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="lastname" wrappingWidth="58.0" />
+        <TextField fx:id="numePersoana" layoutX="210.0" layoutY="105.0" />
+        <ComboBox fx:id="orase" layoutX="210.0" layoutY="67.0" prefHeight="26.0" prefWidth="160.0" />
+        <TextField fx:id="prenumePersoana" layoutX="210.0" layoutY="139.0" />
+        <Text layoutX="149.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="firstname" />
+        <TextField fx:id="usernamePersoana" layoutX="210.0" layoutY="174.0" />
+        <TextField fx:id="parolaPersoana" layoutX="210.0" layoutY="207.0" />
+        <TextField fx:id="stradaPersoana" layoutX="210.0" layoutY="242.0" />
+        <TextField fx:id="numarStradaPersoana" layoutX="210.0" layoutY="277.0" />
+        <TextField fx:id="telefonPersoana" layoutX="210.0" layoutY="313.0" />
+        <Text layoutX="147.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username" />
+        <Text layoutX="148.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="password" />
+        <Text layoutX="173.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="street" />
+        <Text layoutX="152.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="street no." />
+        <Text layoutX="171.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="phone" />
+        <Button fx:id="signUpButton" layoutX="253.0" layoutY="360.0" mnemonicParsing="false" onAction="#onSignUpButtonClicked" text="sign up" />
+      <Label layoutX="179.0" layoutY="72.0" text="city" />
+      <Label layoutX="257.0" layoutY="31.0" text="your info" />
+    </children>
+</AnchorPane>
