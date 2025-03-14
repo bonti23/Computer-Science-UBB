@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightpink;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.zboruri.controller.ClientController">
+    <children>
+        <Button fx:id="cautaButton" layoutX="263.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleSearch" prefHeight="26.0" prefWidth="74.0" text="search" />
+        <Text layoutX="24.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to:" />
+        <ComboBox fx:id="fromCombo" layoutX="55.0" layoutY="249.0" prefWidth="150.0" />
+        <ComboBox fx:id="toCombo" layoutX="55.0" layoutY="281.0" prefWidth="150.0" />
+        <DatePicker fx:id="datePicker" layoutX="400.0" layoutY="268.0" />
+        <Text layoutX="400.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="departure date:" />
+        <Text layoutX="17.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="from:" />
+        <TableView fx:id="tableView" prefHeight="200.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="departureColoana" prefWidth="130.0" text="departure" />
+                <TableColumn fx:id="landingColoana" prefWidth="162.0" text="landing" />
+                <TableColumn fx:id="seatsColoana" prefWidth="166.0" text="seats" />
+                <TableColumn fx:id="availableColoana" prefWidth="141.0" text="seats available" />
+            </columns>
+        </TableView>
+        <Label fx:id="messageLabel" layoutX="223.0" layoutY="281.0" prefHeight="26.0" prefWidth="160.0" text=" " />
+        <Label fx:id="clientNameLabel" layoutX="24.0" layoutY="351.0" prefHeight="26.0" prefWidth="160.0" text="Client Name" />
+        <Button fx:id="buyButton" layoutX="263.0" layoutY="351.0" mnemonicParsing="false" onAction="#handleBuy" prefHeight="26.0" prefWidth="74.0" text="buy" />
+        <Button fx:id="nextButton" layoutX="300.0" layoutY="209.0" mnemonicParsing="false" onAction="#handleNext" prefHeight="26.0" prefWidth="128.0" text="next page" />
+        <Button fx:id="previousButton" layoutX="156.0" layoutY="209.0" mnemonicParsing="false" onAction="#handlePrevious" prefHeight="26.0" prefWidth="134.0" text="previous page" />
+    </children>
+</AnchorPane>
