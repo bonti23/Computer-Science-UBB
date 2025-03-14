@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="403.0" prefWidth="579.0" style="-fx-background-color: lightpink;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.faptebune.controller.LogInController">
+    <children>
+        <!-- ListView pentru persoane -->
+        <ListView fx:id="listaPersoane" layoutX="107.0" layoutY="102.0" onMouseClicked="#onSelectedPerson" prefHeight="200" prefWidth="364.0" />
+
+        <!-- Butonul pentru SignUp -->
+        <Button fx:id="signUpButton" layoutX="261.0" layoutY="346.0" mnemonicParsing="false" onAction="#onSignUpButtonClicked" text="sign up" />
+      <Label layoutX="225.0" layoutY="320.0" text="don't have an account?" />
+      <Label layoutX="209.0" layoutY="70.0" text="select your username to log in" />
+    </children>
+</AnchorPane>
