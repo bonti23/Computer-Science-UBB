@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightpink;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.vacante.controller.MainController">
+    <children>
+        <ComboBox fx:id="locations" layoutX="24.0" layoutY="35.0" onAction="#handleCombo" prefWidth="150.0" />
+        <TableView fx:id="hotelTable" layoutY="76.0" prefHeight="326.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="numeColoana" prefWidth="135.0" text="name" />
+                <TableColumn fx:id="pretColoana" prefWidth="153.0" text="price" />
+                <TableColumn fx:id="roomsColoana" prefWidth="139.0" text="no. rooms" />
+                <TableColumn fx:id="typeColoana" prefWidth="172.0" text="type" />
+            </columns>
+        </TableView>
+        <Button fx:id="offBtn" layoutX="240.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleOff" prefHeight="26.0" prefWidth="121.0" text="search" />
+      <Label layoutX="24.0" layoutY="14.0" text="location:" />
+    </children>
+</AnchorPane>
