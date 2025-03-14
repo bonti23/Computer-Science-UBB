@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightpink;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.faptebune.controller.NevoieController">
+    <children>
+        <TextField fx:id="titlu" layoutX="231.0" layoutY="142.0" prefHeight="26.0" prefWidth="186.0" />
+        <Text layoutX="195.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="title" />
+        <TextField fx:id="descriere" layoutX="231.0" layoutY="187.0" prefHeight="26.0" prefWidth="186.0" />
+        <Text layoutX="165.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="description" />
+        <Button layoutX="235.0" layoutY="341.0" mnemonicParsing="false" onAction="#onAdaugaNevoieButtonClicked" prefHeight="26.0" prefWidth="130.0" text="add need" />
+        <DatePicker fx:id="deadline" layoutX="230.0" layoutY="26.0" />
+        <Spinner fx:id="ora" layoutX="230.0" layoutY="62.0" prefHeight="26.0" prefWidth="186.0" />
+        <Spinner fx:id="minut" layoutX="230.0" layoutY="101.0" prefHeight="26.0" prefWidth="186.0" />
+      <Label layoutX="193.0" layoutY="31.0" text="date" />
+      <Label layoutX="190.0" layoutY="67.0" text="hour" />
+      <Label layoutX="195.0" layoutY="106.0" text="min" />
+      <AmbientLight color="CHARTREUSE" layoutX="75.0" layoutY="76.0" lightOn="true" />
+    </children>
+</AnchorPane>
