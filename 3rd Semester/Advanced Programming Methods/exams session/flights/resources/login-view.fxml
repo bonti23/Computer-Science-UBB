@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="237.0" prefWidth="412.0" style="-fx-background-color: lightpink;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.zboruri.controller.LoginController">
+    <children>
+        <TextField fx:id="usernameField" layoutX="126.0" layoutY="106.0" />
+        <Button fx:id="loginButton" layoutX="172.0" layoutY="163.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="26.0" prefWidth="68.0" text="login" />
+      <Label layoutX="177.0" layoutY="69.0" text="username:" />
+    </children>
+</AnchorPane>
