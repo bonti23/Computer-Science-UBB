@@ -43,7 +43,7 @@ segment code use32 class=code
         mov ecx, lenb
         repeat2:
               mov bl, [b+ebp]
-              cmp bl, o
+              cmp bl, 0
               jge verify2
               jmp skip2
               verify2:
