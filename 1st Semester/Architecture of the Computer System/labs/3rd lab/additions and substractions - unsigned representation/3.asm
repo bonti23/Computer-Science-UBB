@@ -23,7 +23,7 @@ segment code use32 class=code
         ; ...
         mov eax, [c]
         cdq
-        add eax, dqord[d+0]
+        add eax, dword[d+0]
         adc edx, dword[d+4]
         mov ebx, eax
         mov ecx, edx
