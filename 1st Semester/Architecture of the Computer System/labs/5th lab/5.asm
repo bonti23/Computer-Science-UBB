@@ -12,7 +12,7 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
 ; A character string S is given. Obtain the string D containing all small letters from the string S. 
 segment data use32 class=data
     s db "aAbB2%x"
-    len equ $-w
+    len equ $-s
     d resb len
     
 
