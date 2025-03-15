@@ -27,7 +27,7 @@ segment code use32 class=code
         mov ebp, len2-1
         mov ecx, len2
         repeat:
-              mo al, [s2+ebp]
+              mov al, [s2+ebp]
               mov [d+edi], al
               inc edi
               dec ebp
