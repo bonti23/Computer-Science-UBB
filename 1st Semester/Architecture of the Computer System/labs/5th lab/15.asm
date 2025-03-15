@@ -34,7 +34,7 @@ segment code use32 class=code
         loop repeta
         mov ecx, lena
         repeat2:
-              mov al, [a++esi]
+              mov al, [a+esi]
               test al, 01h
               jz false
               mov [r+edi], al
