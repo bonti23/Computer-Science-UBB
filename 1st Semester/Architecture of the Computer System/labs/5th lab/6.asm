@@ -12,7 +12,7 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
 ; A byte string S is given. Obtain the string D by concatenating the elements found on the even positions of S and then the elements found on the odd positions of S.
 segment data use32 class=data
     s 1,2,3,4,5,6,7,8
-    len equ $-w
+    len equ $-s
     d resb len
     
 
