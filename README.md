@@ -14,6 +14,8 @@ Over the past 2 years, I've had the opportunity to work on my passion for **Comp
   - **Databases** (SQL)
   - **Logical and Functional Programming** (Prolog, Lisp)
   - **Probability and Statistics** (Python)
+- **Fourth Semester**
+  - **Web Programming** (html)
 
 This repository serves as a reflection of my growth and progress as I continue to deepen my knowledge in the field.
 
