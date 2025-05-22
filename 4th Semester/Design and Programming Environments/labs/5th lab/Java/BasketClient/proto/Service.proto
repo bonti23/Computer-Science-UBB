@@ -1,0 +1,105 @@
+syntax = "proto3";
+
+package basket;
+
+import "google/protobuf/empty.proto";
+
+option java_package = "org.example.clientfx.grpc";
+option java_outer_classname = "BasketServiceProto"; // Acest nume va fi folosit pentru clasele generate
+
+enum GameType {
+  FINAL = 0;
+  SEMIFINAL = 1;
+  QUARTERFINAL = 2;
+  PLAYOFF = 3;
+  REGULAR = 4;
+  NONE = 5;
+}
+
+message GameDTO {
+  int64 identitykey = 1;
+  string teamA = 2;
+  string teamB = 3;
+  string date = 4;
+  float price = 5;
+  GameType type = 6;
+  int32 seats = 7;
+}
+
+message GameList {
+  repeated GameDTO games = 1;
+}
+
+message PurchaseDTO {
+  int64 identitykey = 1;
+  string client = 2;
+  int64 game = 3;
+  int32 seats = 4;
+  string address = 5;
+}
+
+message PurchaseList {
+  repeated PurchaseDTO purchases = 1;
+}
+
+message UserDTO {
+  int64 identitykey = 1;
+  string name = 2;
+  string username = 3;
+  string password = 4;
+}
+
+message DefaultResponse {
+  oneof result {
+    bool success = 1;
+    string error = 2;
+    UserDTO user = 3;
+  }
+}
+
+message GameResponse {
+  oneof result {
+    GameList games = 1;
+    string error = 2;
+  }
+}
+
+message PurchaseResponse {
+  oneof result {
+    PurchaseList purchases = 1;
+    string error = 2;
+  }
+}
+
+message GameTypeRequest {
+  GameType type = 1;
+}
+
+message UsernameRequest {
+  string username = 1;
+}
+
+
+service BasketService {
+  rpc Login(UserDTO) returns (DefaultResponse);
+  rpc Signup(UserDTO) returns (DefaultResponse);
+  rpc AddPurchase(PurchaseDTO) returns (DefaultResponse);
+  rpc ShowGames(google.protobuf.Empty) returns (GameResponse);
+  rpc ShowcaseGamesByType(GameTypeRequest) returns (GameResponse);
+  rpc FindPurchasesByClient(UsernameRequest) returns (PurchaseResponse);
+  rpc FindAllPurchases(google.protobuf.Empty) returns (PurchaseResponse);
+  rpc FindAllUsers(google.protobuf.Empty) returns (UserList);
+
+
+}
+
+message UserList {
+  repeated UserDTO users = 1;
+}
+service NotificationService {
+  rpc NewPurchaseNotification(google.protobuf.Empty) returns (stream Notification);
+}
+
+message Notification {
+  string message = 1;
+}
