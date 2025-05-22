@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.mpp2024.controller.SignUpView">
+
+    <ImageView fx:id="backgroundImage" fitHeight="600" fitWidth="800" preserveRatio="false">
+        <image>
+            <Image url="@images/photo-1546519638-68e109498ffc.jpeg" />
+        </image>
+    </ImageView>
+    <VBox alignment="CENTER" prefHeight="425.0" prefWidth="571.0" spacing="15">
+
+        <Label prefHeight="26.0" prefWidth="160.0" style="-fx-font-size: 40px; -fx-font-weight: bold; -fx-text-fill: #9c1f1f" text="sign up" />
+
+        <TextField fx:id="nameField" layoutX="300.0" layoutY="159.0" maxWidth="200" prefWidth="200" promptText="full name" />
+        <TextField fx:id="usernameField" layoutX="300.0" layoutY="159.0" maxWidth="200" prefWidth="200" promptText="username" />
+        <PasswordField fx:id="passwordField" layoutX="300.0" layoutY="159.0" maxWidth="200" prefWidth="200" promptText="password" />
+
+        <Label fx:id="errorMessage" textFill="red" />
+
+        <Button fx:id="signUpButton" prefWidth="150" text="sign up" />
+
+    </VBox>
+</StackPane>
