@@ -1,0 +1,5 @@
+protoc -I="C:\Intellij Projects\basket_server\BasketClient\src\main\proto" ^
+  --java_out="C:\Intellij Projects\basket_server\BasketClient\build\generated\source\proto\main\java" ^
+  --grpc-java_out="C:\Intellij Projects\basket_server\BasketClient\build\generated\source\proto\main\grpc" ^
+  --plugin=protoc-gen-grpc-java="C:\protoc-gen-grpc-java\protoc-gen-grpc-java.exe" ^
+  "C:\Intellij Projects\basket_server\BasketClient\src\main\proto\Service.proto"
