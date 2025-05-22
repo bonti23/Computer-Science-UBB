@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Volleyball Enrollment</title>
+  <style type="text/css">
+    .nested-table {
+      width: 100%;
+      margin: 0;
+      border-collapse: collapse;
+    }
+    .nested-table td {
+      border: 1px solid darkblue;
+      padding: 5px;
+    }
+    th, td {
+      border: 1px solid darkblue;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #0f45d8;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body style="background-color: #5e82da; font-family: Times New Roman, sans-serif; text-align: center;">
+<h1 style="text-align: center; color: white;">Volleyball Academy<br></h1>
+<img src="volley.jpeg" alt="Volleyball Logo">
+<br><br>
+<table style="width: 80%; margin: auto; border-collapse: collapse; background-color: white;">
+  <tr>
+    <th colspan="8">Training Schedule</th>
+  </tr>
+  <tr>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Saturday</th>
+    <th>Sunday</th>
+    <th>Coaches</th>
+  </tr>
+  <tr>
+    <td>8:00 - 10:00</td>
+    <td>8:00 - 10:00</td>
+    <td>8:00 - 10:00</td>
+    <td>8:00 - 10:00</td>
+    <td>8:00 - 10:00</td>
+    <td>8:00 - 10:00</td>
+    <td rowspan="2">rest day</td>
+    <td>
+      <table class="nested-table">
+        <tr>
+          <td>Marla Henry</td>
+          <td>Hitting & Blocking</td>
+        </tr>
+        <tr>
+          <td>Rosalia Rodriguez</td>
+          <td>Setting & Defense</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>18:00 - 19:30</td>
+    <td>18:00 - 19:30</td>
+    <td>18:00 - 19:30</td>
+    <td>18:00 - 19:30</td>
+    <td>18:00 - 19:30</td>
+    <td>18:00 - 19:30</td>
+    <td>
+      <table class="nested-table">
+        <tr>
+          <td>Anna Smith</td>
+          <td>Libero & Defensive Specialist</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h2 style="color:white">Locations:</h2>
+<ul style="list-style:square; text-align:center; display: inline-block;">
+  <li style="text-align:center; color:white">Strada Plopilor 2A</li>
+  <li style="text-align:center; color:white">Strada Plopilor 2B</li>
+</ul>
+<form method="GET" action="submit_form.php" style="margin-top: 30px; background-color: #ffffff; padding: 20px; border-radius: 10px; width: 50%; margin-left: auto; margin-right: auto; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);">
+  <h2 style="color:black">Want to join our team? Complete the form down below!</h2>
+  First Name: <input type="text" name="firstname" ><br >
+  Last Name: <input type="text" name="lastname" ><br >
+  Email: <input type="text" name="email" ><br >
+  Birthday: <input type="text" name="birthday" ><br >
+  Address: <input type="text" name="address" ><br >
+  City: <input type="text" name="City" ><br >
+  County: <input type="text" name="county" ><br >
+  Postcode: <input type="text" name="postcode" ><br >
+  Phone Number: <input type="text" name="phone" ><br >
+  Gender: <br >
+  <input type="radio" name="gender" value="Male" >Male<br >
+  <input type="radio" name="gender" value="Female" >Female<br >
+  Experience: <br >
+  <input type="checkbox" name="beginner" >beginner<br >
+  <input type="checkbox" name="intermediate" >intermediate<br >
+  <input type="checkbox" name="advanced" >advanced<br >
+  Position: <br>
+  <select name="position">
+    <option value="hitter">hitter</option>
+    <option value="setter">setter</option>
+    <option value="libero">libero</option>
+    <option value="blocker">blocker</option>
+    <option value="defensive specialist">defensive specialist</option>
+  </select><br>
+  <textarea name="message" rows="10" cols="30">More info about yourself.</textarea> <br>
+  <input type="submit" value="Register!">
+  <input type="reset">
+</form>
+<h3 style="color:white; text-align: left;">Further questions? Don't hesitate to contact us!</h3>
+<ol style="color:white; list-style-type:lower-alpha; text-align:left;">
+  <li>Phone number:
+    <ol style="color:white; list-style-type:roman; text-align:left;">
+      <li>0707070707</li>
+      <li>0712345678</li>
+    </ol>
+  </li>
+  <li>
+    Email:
+    <ol style="color:white; list-style-type:upper-roman; text-align:left;">
+      <li>info@volleyballacademy.com</li>
+      <li>volleyballacademy@gmail.com</li>
+    </ol>
+  </li>
+</ol>
+</body>
+</html>
