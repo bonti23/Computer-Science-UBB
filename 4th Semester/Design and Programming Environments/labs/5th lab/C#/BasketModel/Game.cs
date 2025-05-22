@@ -10,7 +10,6 @@ namespace BasketModel
         public string teamB { get; set; }  // Proprietate publică
         public string date { get; set; }   // Proprietate publică
         public float price { get; set; }   // Proprietate publică
-        [JsonConverter(typeof(JsonStringEnumConverter))]
 
         public GameType type { get; set; }
         public int seats { get; set; }     // Proprietate publică
