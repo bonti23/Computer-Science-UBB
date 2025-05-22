@@ -1,0 +1,2 @@
+INSERT INTO personnel(first_name, last_name, username, password, email, phone, section, terminal, role)
+VALUES ('Alexandra', 'Bontidean', 'bonti', 'secret1234', 'alexandramiha04@gmail.com', '0711223344', 3, 0, 0);

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Pos?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="bonti.controller.DrugsView"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <VBox spacing="15" alignment="TOP_CENTER" style="-fx-padding: 20px;">
+        <TableView fx:id="table">
+            <columns>
+                <TableColumn fx:id="nameCol" text="Medicine" />
+                <TableColumn fx:id="prescriptionCol" text="Prescription" />
+            </columns>
+        </TableView>
+        <Button fx:id="logoutButton" text="Logout" style="-fx-background-color: #ff6347; -fx-text-fill: white; -fx-padding: 10px;"/>
+    </VBox>
+
+</AnchorPane>
