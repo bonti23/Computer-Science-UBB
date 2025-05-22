@@ -1,0 +1,45 @@
+<Window x:Class="basket2.SignUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:basket2"
+        Title="Sign Up" Height="450" Width="800">
+    <Window.Resources>
+        <local:TextBoxVisibilityConverter x:Key="TextBoxVisibilityConverter"/>
+    </Window.Resources>
+
+    <Grid>
+        <Image Source="images/WhatsApp Image 2025-03-30 at 16.56.29_df9c57b7.jpg" Stretch="Fill" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <!-- Sign Up Title -->
+            <TextBlock Text="Sign up" FontSize="40" FontWeight="Bold" Foreground="Beige" Margin="0,0,0,15"/>
+
+            <!-- Name TextBox with Watermark -->
+            <Grid Width="200" Height="30" Margin="10,5" HorizontalAlignment="Center">
+                <TextBox x:Name="nameField" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"/>
+                <TextBlock Text="Full Name" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" Foreground="Gray" IsHitTestVisible="False"
+                           Visibility="{Binding Text.Length, ElementName=nameField, Converter={StaticResource TextBoxVisibilityConverter}}"/>
+            </Grid>
+
+            <!-- Username TextBox with Watermark -->
+            <Grid Width="200" Height="30" Margin="10,5" HorizontalAlignment="Center">
+                <TextBox x:Name="usernameField" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"/>
+                <TextBlock Text="Username" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" Foreground="Gray" IsHitTestVisible="False"
+                           Visibility="{Binding Text.Length, ElementName=usernameField, Converter={StaticResource TextBoxVisibilityConverter}}"/>
+            </Grid>
+
+            <!-- PasswordBox with Watermark -->
+            <Grid Width="200" Height="30" Margin="10,5" HorizontalAlignment="Center">
+                <PasswordBox x:Name="passwordField" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"/>
+                <TextBlock Text="Password" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" Foreground="Gray" IsHitTestVisible="False"
+                           Visibility="{Binding Password.Length, ElementName=passwordField, Converter={StaticResource TextBoxVisibilityConverter}}"/>
+            </Grid>
+
+            <!-- Error Message -->
+            <TextBlock x:Name="errorMessage" Foreground="Red" Height="30" Margin="0,10"/>
+
+            <!-- SignUp Button -->
+            <Button x:Name="signUpButton" Content="Sign Up" Width="150" Height="40" Margin="0,10" Click="SignUpButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
