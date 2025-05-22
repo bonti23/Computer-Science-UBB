@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Probl 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #ccc;
+            background-color: black;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+            color: transparent;
+            font-size: 0;
+        }
+
+        td:hover {
+            transform: scale(1.05);
+            border-color: #888;
+        }
+    </style>
+</head>
+<body>
+<table id="tabel"></table>
+<script src="script3.js"></script>
+</body>
+</html>
