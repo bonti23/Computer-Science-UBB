@@ -1,0 +1,23 @@
+CREATE TABLE Game(
+    id integer constraint game_pk primary key autoincrement,
+    teamA varchar(50),
+    teamB varchar(50),
+    date varchar(50),
+    price float,
+    type varchar(50),
+    seats integer
+);
+CREATE Table User(
+    id integer constraint game_pk primary key autoincrement,
+    name varchar(50),
+    username varchar(50),
+    password varchar(50)
+);
+CREATE TABLE Purchase(
+    id integer constraint game_pk primary key autoincrement,
+    client varchar(50),
+    game integer,
+    seats integer,
+    address varchar(50),
+    foreign key (game) References Game(id)
+);
