@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZRVW4J1lCrM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\alexa\\RiderProjects\\basket_server\\BasketModel\\BasketModel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alexa\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\10.0.0-preview.4.25258.110\\microsoft.bcl.asyncinterfaces.10.0.0-preview.4.25258.110.nupkg.sha512",
+    "C:\\Users\\alexa\\.nuget\\packages\\system.buffers\\4.6.1\\system.buffers.4.6.1.nupkg.sha512",
+    "C:\\Users\\alexa\\.nuget\\packages\\system.io.pipelines\\10.0.0-preview.4.25258.110\\system.io.pipelines.10.0.0-preview.4.25258.110.nupkg.sha512",
+    "C:\\Users\\alexa\\.nuget\\packages\\system.memory\\4.6.3\\system.memory.4.6.3.nupkg.sha512",
+    "C:\\Users\\alexa\\.nuget\\packages\\system.numerics.vectors\\4.6.1\\system.numerics.vectors.4.6.1.nupkg.sha512",
+    "C:\\Users\\alexa\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.1.2\\system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512",
+    "C:\\Users\\alexa\\.nuget\\packages\\system.text.encodings.web\\10.0.0-preview.4.25258.110\\system.text.encodings.web.10.0.0-preview.4.25258.110.nupkg.sha512",
+    "C:\\Users\\alexa\\.nuget\\packages\\system.text.json\\10.0.0-preview.4.25258.110\\system.text.json.10.0.0-preview.4.25258.110.nupkg.sha512",
+    "C:\\Users\\alexa\\.nuget\\packages\\system.threading.tasks.extensions\\4.6.3\\system.threading.tasks.extensions.4.6.3.nupkg.sha512",
+    "C:\\Users\\alexa\\.nuget\\packages\\system.valuetuple\\4.6.1\\system.valuetuple.4.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}

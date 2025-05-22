@@ -1,0 +1,20 @@
+public void AddPurchase(Purchase purchase)
+        {
+            Request request = new Request(RequestType.ADD_PURCHASE, new PurchaseDTO(purchase));
+            sendRequest(request);
+            Response response = readResponse();
+
+            if (response == null)
+            {
+                closeConnection();
+                throw new Exception("No response received from server.");
+            }
+
+            if (response.Type == ResponseType.PURCHASE_FAILED)
+            {
+                closeConnection();
+                throw new Exception(response.Data.ToString());
+            }
+
+            log.Info("Purchase added successfully.");
+        }

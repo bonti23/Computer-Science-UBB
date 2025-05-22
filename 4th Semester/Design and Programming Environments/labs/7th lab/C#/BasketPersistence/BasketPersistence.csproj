@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net9.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="log4net" Version="3.0.5-preview.2" />
+      <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
+        <ProjectReference Include="..\BasketModel\BasketModel.csproj" />
+        <ProjectReference Include="..\ConnectionUtils\ConnectionUtils.csproj" />
+    </ItemGroup>
+
+</Project>

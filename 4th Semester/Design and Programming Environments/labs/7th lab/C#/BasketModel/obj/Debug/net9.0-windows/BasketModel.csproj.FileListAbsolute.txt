@@ -1,0 +1,12 @@
+C:\Users\alexa\RiderProjects\basket_server\BasketModel\obj\Debug\net9.0-windows\BasketModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\RiderProjects\basket_server\BasketModel\obj\Debug\net9.0-windows\BasketModel.csproj.CoreCompileInputs.cache
+C:\Users\alexa\RiderProjects\basket_server\BasketModel\bin\Debug\net9.0-windows\BasketModel.exe
+C:\Users\alexa\RiderProjects\basket_server\BasketModel\bin\Debug\net9.0-windows\BasketModel.deps.json
+C:\Users\alexa\RiderProjects\basket_server\BasketModel\bin\Debug\net9.0-windows\BasketModel.runtimeconfig.json
+C:\Users\alexa\RiderProjects\basket_server\BasketModel\bin\Debug\net9.0-windows\BasketModel.dll
+C:\Users\alexa\RiderProjects\basket_server\BasketModel\bin\Debug\net9.0-windows\BasketModel.pdb
+C:\Users\alexa\RiderProjects\basket_server\BasketModel\obj\Debug\net9.0-windows\BasketModel.dll
+C:\Users\alexa\RiderProjects\basket_server\BasketModel\obj\Debug\net9.0-windows\refint\BasketModel.dll
+C:\Users\alexa\RiderProjects\basket_server\BasketModel\obj\Debug\net9.0-windows\BasketModel.pdb
+C:\Users\alexa\RiderProjects\basket_server\BasketModel\obj\Debug\net9.0-windows\BasketModel.genruntimeconfig.cache
+C:\Users\alexa\RiderProjects\basket_server\BasketModel\obj\Debug\net9.0-windows\ref\BasketModel.dll

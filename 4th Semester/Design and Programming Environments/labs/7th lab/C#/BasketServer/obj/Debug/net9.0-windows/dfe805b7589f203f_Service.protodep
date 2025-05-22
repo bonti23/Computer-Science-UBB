@@ -1,0 +1,3 @@
+obj\Debug\net9.0-windows\proto/Service.cs \
+obj\Debug\net9.0-windows\proto/ServiceGrpc.cs: C:/Users/alexa/.nuget/packages/grpc.tools/2.56.0/build/native/include/google/protobuf/empty.proto\
+ proto/Service.proto

@@ -1,0 +1,14 @@
+C:\Users\alexa\RiderProjects\basket_server\basket_server\bin\Debug\net9.0-windows\basket_server.exe
+C:\Users\alexa\RiderProjects\basket_server\basket_server\bin\Debug\net9.0-windows\basket_server.deps.json
+C:\Users\alexa\RiderProjects\basket_server\basket_server\bin\Debug\net9.0-windows\basket_server.runtimeconfig.json
+C:\Users\alexa\RiderProjects\basket_server\basket_server\bin\Debug\net9.0-windows\basket_server.dll
+C:\Users\alexa\RiderProjects\basket_server\basket_server\bin\Debug\net9.0-windows\basket_server.pdb
+C:\Users\alexa\RiderProjects\basket_server\basket_server\obj\Debug\net9.0-windows\basket_server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\RiderProjects\basket_server\basket_server\obj\Debug\net9.0-windows\basket_server.AssemblyInfoInputs.cache
+C:\Users\alexa\RiderProjects\basket_server\basket_server\obj\Debug\net9.0-windows\basket_server.AssemblyInfo.cs
+C:\Users\alexa\RiderProjects\basket_server\basket_server\obj\Debug\net9.0-windows\basket_server.csproj.CoreCompileInputs.cache
+C:\Users\alexa\RiderProjects\basket_server\basket_server\obj\Debug\net9.0-windows\basket_server.dll
+C:\Users\alexa\RiderProjects\basket_server\basket_server\obj\Debug\net9.0-windows\refint\basket_server.dll
+C:\Users\alexa\RiderProjects\basket_server\basket_server\obj\Debug\net9.0-windows\basket_server.pdb
+C:\Users\alexa\RiderProjects\basket_server\basket_server\obj\Debug\net9.0-windows\basket_server.genruntimeconfig.cache
+C:\Users\alexa\RiderProjects\basket_server\basket_server\obj\Debug\net9.0-windows\ref\basket_server.dll
