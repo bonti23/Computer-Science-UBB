@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bonti.controller.LoginView">
+    <VBox alignment="CENTER" spacing="15">
+        <children>
+            <HBox alignment="CENTER" />
+            <HBox alignment="CENTER" />
+            <Label fx:id="errorMessage" textFill="red" />
+        </children>
+    </VBox>
+    <TextField fx:id="username" layoutX="300.0" layoutY="159.0" maxWidth="200" prefWidth="200" promptText="username" />
+    <PasswordField fx:id="password" layoutX="300.0" layoutY="199.0" maxWidth="200" prefWidth="200" promptText="password" />
+    <Button fx:id="login" layoutX="325.0" layoutY="237.0" maxWidth="150" prefWidth="150" text="login" />
+    <TextFlow fx:id="signInFlow" layoutX="325.0" layoutY="294.0">
+        <Text text="don't have an account? " fill="blue" />
+        <Text fx:id="signInText" fill="blue" style="-fx-underline: true;" />
+    </TextFlow>
+</AnchorPane>

@@ -1,0 +1,9 @@
+rootProject.name = 'basket_orm'
+include 'BasketModel'
+include 'BasketPersistence'
+include 'BasketServices'
+include 'BasketNetworking'
+include 'BasketServer'
+include 'BasketClient'
+include 'RestServices'
+

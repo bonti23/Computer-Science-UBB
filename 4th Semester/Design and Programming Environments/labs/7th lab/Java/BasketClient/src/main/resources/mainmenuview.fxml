@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="bonti.controller.MainMenuView"
+            prefHeight="600.0" prefWidth="800.0">
+    <children>
+        <ComboBox fx:id="gameTypeComboBox" layoutX="20" layoutY="20" prefWidth="200" />
+
+        <TableView fx:id="gameTable" layoutX="20" layoutY="60" prefWidth="760" prefHeight="400">
+            <columns>
+                <TableColumn fx:id="teamAColumn" text="home team" prefWidth="152" />
+                <TableColumn fx:id="teamBColumn" text="away team" prefWidth="152" />
+                <TableColumn fx:id="dateColumn" text="date" prefWidth="152" />
+                <TableColumn fx:id="priceColumn" text="price" prefWidth="152" />
+                <TableColumn fx:id="seatsColumn" text="seats" prefWidth="152" />
+            </columns>
+        </TableView>
+
+        <HBox layoutX="20" layoutY="500" spacing="20">
+            <Button fx:id="purchaseButton" text="Purchase" prefWidth="120"/>
+            <Button fx:id="logoutButton" text="Logout" onAction="#handleLogout" prefWidth="120"/>
+        </HBox>
+
+    </children>
+</AnchorPane>
