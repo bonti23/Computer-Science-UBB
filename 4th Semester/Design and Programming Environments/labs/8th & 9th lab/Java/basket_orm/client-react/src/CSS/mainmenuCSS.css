@@ -1,0 +1,77 @@
+.mainmenu-container {
+    padding: 20px;
+    background-image: url("../images/Basketball_3.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.mainmenu-box button {
+    background-color: #24a2ef;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.mainmenu-box button:last-child {
+    margin-right: 0;
+}
+
+.mainmenu-box {
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.mainmenu-box h2 {
+    margin-top: 0;
+}
+
+
+
+.mainmenu-box button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.mainmenu-box select {
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.mainmenu-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    color: white;
+}
+
+.mainmenu-box th, .mainmenu-box td {
+    border: 1px solid #fff;
+    padding: 8px;
+    text-align: center;
+}
+
+.mainmenu-box tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mainmenu-box tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.mainmenu-box p.error-message {
+    color: #ef2442;
+    font-weight: bold;
+    margin-top: 10px;
+}

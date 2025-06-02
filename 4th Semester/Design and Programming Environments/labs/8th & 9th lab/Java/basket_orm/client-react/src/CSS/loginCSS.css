@@ -1,0 +1,113 @@
+.login-container {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    background-image: url('../images/nbaLogIn.jpg');
+    background-size: 1500px 620px; /* exemplu dimensiune */
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+.login-box {
+    background: rgba(255, 255, 255, 0.1); /* aproape transparent */
+    backdrop-filter: blur(10px); /* blur pentru efect de sticlă */
+    -webkit-backdrop-filter: blur(10px); /* suport Safari */
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    width: 350px;
+    max-width: 90%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* delimitare ușoară */
+}
+
+
+.login-box h2 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #0b95ef;
+    text-shadow: 0 1px 3px rgba(11, 149, 239, 0.6);
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1.8px solid #0b95ef;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: #24a2ef;
+    box-shadow: 0 0 8px #24a2ef;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 13px 0;
+    background-color: #0b95ef;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(11, 149, 239, 0.6);
+    transition: background-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.login-box button:hover {
+    background-color: #24a2ef;
+    box-shadow: 0 8px 20px rgba(36, 162, 239, 0.7);
+}
+
+.login-box button:active {
+    background-color: #69b8ff;
+    box-shadow: 0 3px 8px rgba(105, 184, 255, 0.7);
+}
+
+.login-box p {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: #ffffff;
+}
+
+.login-box p span {
+    color: #0b95ef;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.login-box p span:hover {
+    color: #24a2ef;
+}
+
+.basketball-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transform: rotate(15deg);
+    transition: transform 1s ease, filter 0.3s ease;
+    cursor: pointer;
+    z-index: 5;
+    background: transparent;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.4));
+}
+
+.basketball-image:hover {
+    transform: rotate(375deg);
+    filter: drop-shadow(4px 6px 6px rgba(0, 0, 0, 0.6));
+}
