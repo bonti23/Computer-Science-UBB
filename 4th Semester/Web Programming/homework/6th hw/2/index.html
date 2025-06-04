@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Paginare Contacte</title>
+    <style>
+        table, th, td { border: 1px solid black; border-collapse: collapse; padding: 6px; }
+        button[disabled] { opacity: 0.5; }
+    </style>
+</head>
+<body>
+<h2>Lista contacte</h2>
+<table id="tabela">
+    <thead>
+    <tr>
+        <th>Nume</th>
+        <th>Prenume</th>
+        <th>Telefon</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<br>
+<button id="prevBtn" onclick="loadPage(currentPage - 1)">Previous</button>
+<button id="nextBtn" onclick="loadPage(currentPage + 1)">Next</button>
+
+<script>
+    let currentPage = 0;
+    const rowsPerPage = 3;
+
+    function loadPage(page) {
+        fetch(`server.php?page=${page}&limit=${rowsPerPage}`)
+            .then(res => res.json())
+            .then(data => {
+                const tbody = document.querySelector("#tabela tbody");
+                tbody.innerHTML = "";
+
+                if (data.records.length > 0) {
+                    data.records.forEach(row => {
+                        const tr = document.createElement("tr");
+                        tr.innerHTML = `<td>${row.nume}</td><td>${row.prenume}</td><td>${row.telefon}</td><td>${row.email}</td>`;
+                        tbody.appendChild(tr);
+                    });
+                    currentPage = page;
+                }
+
+                document.getElementById("prevBtn").disabled = currentPage === 0;
+                document.getElementById("nextBtn").disabled = !data.hasMore;
+            });
+    }
+
+    loadPage(0);
+</script>
+</body>
+</html>
