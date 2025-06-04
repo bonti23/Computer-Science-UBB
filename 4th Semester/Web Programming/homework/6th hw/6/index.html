@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Filtrare Notebookuri</title>
+    <style>
+        select { margin: 10px; }
+        #results { margin-top: 20px; font-family: Arial; }
+    </style>
+</head>
+<body>
+<h2>Filtru notebookuri</h2>
+
+<label>Producător:</label>
+<select id="producator"></select>
+
+<label>Procesor:</label>
+<select id="procesor"></select>
+
+<label>Memorie RAM:</label>
+<select id="memorie"></select>
+
+<div id="results"></div>
+
+<script>
+    const filters = ['producator', 'procesor', 'memorie'];
+
+    function loadFilters() {
+        fetch('get_filters.php')
+            .then(res => res.json())
+            .then(data => {
+                filters.forEach(f => {
+                    const select = document.getElementById(f);
+                    select.innerHTML = '<option value="">Toate</option>';
+                    data[f].forEach(val => {
+                        const option = document.createElement('option');
+                        option.value = val;
+                        option.textContent = val;
+                        select.appendChild(option);
+                    });
+                    select.addEventListener('change', filterResults);
+                });
+            });
+    }
+
+    function filterResults() {
+        const params = {
+            producator: document.getElementById('producator').value,
+            procesor: document.getElementById('procesor').value,
+            memorie: document.getElementById('memorie').value
+        };
+
+        fetch('filter_products.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(params)
+        })
+            .then(res => res.json())
+            .then(data => {
+                const results = document.getElementById('results');
+                if (data.length === 0) {
+                    results.innerHTML = "<p>Nicio potrivire găsită.</p>";
+                    return;
+                }
+                results.innerHTML = "<ul>" + data.map(d =>
+                    `<li>${d.model} - ${d.producator} - ${d.procesor} - ${d.memorie}GB RAM</li>`
+                ).join('') + "</ul>";
+            });
+    }
+
+    loadFilters();
+    window.onload = filterResults;
+</script>
+</body>
+</html>
