@@ -1,6 +1,6 @@
 ## 📚 Computer Science Classes
 
-Over the past 2 years, I've had the opportunity to work on my passion for **Computer Science**. Here's an overview of the courses I've taken:
+Over the past 2 years, I have had the opportunity to work on my passion for **Computer Science**. Here is an overview of the courses I have taken:
 
 - **First Semester:**
   - **Fundamentals of Programming** (Python)
