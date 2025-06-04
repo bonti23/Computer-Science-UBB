@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Tree View Directories</title>
+  <style>
+    ul { list-style-type: none; margin-left: 20px; padding-left: 10px; }
+    li { cursor: pointer; margin: 2px 0; position: relative; }
+    .folder::before {
+      content: "► ";
+      display: inline-block;
+      width: 1em;
+      transition: transform 0.2s ease;
+    }
+    .folder.open::before {
+      content: "▼ ";
+    }
+    .file::before { content: "📄 "; }
+    #content {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      white-space: pre-wrap;
+      min-height: 150px;
+      background: #fafafa;
+    }
+    #error {
+      color: red;
+      margin-top: 10px;
+      font-weight: bold;
+      display: none;
+    }
+    #refreshBtn {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+<h2>Tree View directories and files</h2>
+<button id="refreshBtn">Reîncarcă folderul curent</button>
+<div id="error"></div>
+<ul id="tree-root"></ul>
+<div id="content"><em>The content of the file will appear here...</em></div>
+
+<script>
+  let currentPath = ".";
+
+  function loadDirectory(path, ulElement) {
+    currentPath = path;
+    document.getElementById('error').style.display = 'none';
+
+    fetch('explore.php?path=' + encodeURIComponent(path))
+            .then(response => {
+              if (!response.ok) throw new Error("Nu se poate accesa folderul");
+              return response.json();
+            })
+            .then(data => {
+              ulElement.innerHTML = '';
+              data.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item.name;
+                li.dataset.path = item.path;
+
+                if (item.type === 'dir') {
+                  li.classList.add('folder');
+                  li.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    if (li.classList.contains('open')) {
+                      li.classList.remove('open');
+                      const subUl = li.querySelector('ul');
+                      if (subUl) li.removeChild(subUl);
+                    } else {
+                      li.classList.add('open');
+                      const subUl = document.createElement('ul');
+                      li.appendChild(subUl);
+                      loadDirectory(item.path, subUl);
+                    }
+                  });
+                } else {
+                  li.classList.add('file');
+                  li.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    loadFileContent(item.path);
+                  });
+                }
+                ulElement.appendChild(li);
+              });
+            })
+            .catch(err => {
+              const errorDiv = document.getElementById('error');
+              errorDiv.textContent = err.message;
+              errorDiv.style.display = 'block';
+            });
+  }
+
+  function loadFileContent(filePath) {
+    document.getElementById('error').style.display = 'none';
+    fetch('explore.php?file=' + encodeURIComponent(filePath))
+            .then(response => {
+              if (!response.ok) throw new Error("Nu se poate citi fișierul");
+              return response.text();
+            })
+            .then(data => {
+              document.getElementById('content').textContent = data;
+            })
+            .catch(err => {
+              const errorDiv = document.getElementById('error');
+              errorDiv.textContent = err.message;
+              errorDiv.style.display = 'block';
+            });
+  }
+
+  document.getElementById('refreshBtn').addEventListener('click', () => {
+    const rootUl = document.getElementById('tree-root');
+    loadDirectory(currentPath, rootUl);
+  });
+
+  window.onload = () => {
+    const rootUl = document.getElementById('tree-root');
+    loadDirectory('.', rootUl);
+  };
+</script>
+</body>
+</html>
