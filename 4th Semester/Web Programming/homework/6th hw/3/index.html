@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Editare Persoane</title>
+</head>
+<body>
+<h2>Editare persoane</h2>
+
+<select id="idSelect"></select>
+
+<form id="persForm">
+    <p>
+        <label>Nume: <input type="text" id="nume"></label>
+    </p>
+    <p>
+        <label>Prenume: <input type="text" id="prenume"></label>
+    </p>
+    <p>
+        <label>Email: <input type="email" id="email"></label>
+    </p>
+    <button type="button" id="saveBtn" disabled>Save</button>
+</form>
+
+<script>
+    let currentId = null;
+    let isModified = false;
+
+    const form = document.getElementById("persForm");
+    const saveBtn = document.getElementById("saveBtn");
+
+    function loadIds() {
+        fetch("server.php?action=get_ids")
+            .then(res => res.json())
+            .then(ids => {
+                const sel = document.getElementById("idSelect");
+                sel.innerHTML = "";
+                ids.forEach(id => {
+                    const opt = document.createElement("option");
+                    opt.value = id;
+                    opt.textContent = `ID ${id}`;
+                    sel.appendChild(opt);
+                });
+                if (ids.length > 0) {
+                    sel.value = ids[0];
+                    loadData(ids[0]);
+                }
+            });
+    }
+
+    function loadData(id) {
+        fetch(`server.php?action=get_data&id=${id}`)
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("nume").value = data.nume;
+                document.getElementById("prenume").value = data.prenume;
+                document.getElementById("email").value = data.email;
+                currentId = id;
+                isModified = false;
+                saveBtn.disabled = true;
+            });
+    }
+
+    form.addEventListener("input", () => {
+        isModified = true;
+        saveBtn.disabled = false;
+    });
+
+    saveBtn.addEventListener("click", () => {
+        const payload = {
+            id: currentId,
+            nume: document.getElementById("nume").value,
+            prenume: document.getElementById("prenume").value,
+            email: document.getElementById("email").value
+        };
+
+        fetch("server.php?action=save", {
+            method: "POST",
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(payload)
+        }).then(() => {
+            isModified = false;
+            saveBtn.disabled = true;
+            alert("Salvat cu succes!");
+        });
+    });
+
+    document.getElementById("idSelect").addEventListener("change", (e) => {
+        const newId = e.target.value;
+        if (isModified) {
+            if (confirm("Aveți modificări nesalvate. Le salvați înainte de a schimba selecția?")) {
+                saveBtn.click();
+                setTimeout(() => loadData(newId), 200);
+            } else {
+                isModified = false;
+                loadData(newId);
+            }
+        } else {
+            loadData(newId);
+        }
+    });
+
+    loadIds();
+</script>
+</body>
+</html>
