@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Rute Trenuri</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function updateStatii() {
+            const plecare = document.getElementById("plecare").value;
+
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("sosire").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "server.php?plecare=" + encodeURIComponent(plecare), true);
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+<h2>Rute Trenuri</h2>
+
+<label for="plecare">Stație plecare:</label>
+<select id="plecare" onchange="updateStatii()">
+    <option value="">-- Alege --</option>
+    <option value="Oras1">Oras1</option>
+    <option value="Oras2">Oras2</option>
+    <option value="Oras6">Oras6</option>
+</select>
+
+<br><br>
+
+<label for="sosire">Stație sosire:</label>
+<select id="sosire">
+    <option value="">-- Așteaptă selecția --</option>
+</select>
+</body>
+</html>
