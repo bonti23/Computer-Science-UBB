@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Căutare Trenuri</title>
+    <style>
+        label, select { margin: 5px; display: block; }
+        #rezultate { margin-top: 20px; font-family: Arial; }
+    </style>
+</head>
+<body>
+<h2>Căutare trenuri</h2>
+
+<label>Localitate plecare:
+    <input type="text" id="plecare">
+</label>
+
+<label>Localitate sosire:
+    <input type="text" id="sosire">
+</label>
+
+<label>
+    <input type="checkbox" id="cu_legatura"> Permite curse cu legături
+</label>
+
+<button onclick="cautaTrenuri()">Caută</button>
+
+<div id="rezultate"></div>
+
+<script>
+    function cautaTrenuri() {
+        const plecare = document.getElementById('plecare').value;
+        const sosire = document.getElementById('sosire').value;
+        const legatura = document.getElementById('cu_legatura').checked;
+
+        fetch('search.php', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({plecare, sosire, legatura})
+        })
+            .then(r => r.json())
+            .then(data => {
+                const container = document.getElementById('rezultate');
+                if (data.length === 0) {
+                    container.innerHTML = "<p>Nicio rută găsită.</p>";
+                    return;
+                }
+
+                container.innerHTML = '<ul>' + data.map(item =>
+                    `<li>${item.descriere}</li>`
+                ).join('') + '</ul>';
+            });
+    }
+</script>
+</body>
+</html>
