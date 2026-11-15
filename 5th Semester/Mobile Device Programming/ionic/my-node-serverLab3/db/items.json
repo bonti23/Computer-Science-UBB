@@ -1,0 +1,10 @@
+{"_id":"b1","title":"The Great Gatsby","price":39.99,"sold":false,"launchDate":"2021-03-15T00:00:00.000Z","userId":"vI1GMkzBza5i82zj"}
+{"_id":"b10","title":"Crime and Punishment","price":36.8,"sold":true,"launchDate":"2022-08-12T00:00:00.000Z","userId":"vI1GMkzBza5i82zj"}
+{"_id":"b2","title":"To Kill a Mockingbird","price":29.5,"sold":true,"launchDate":"2020-07-11T00:00:00.000Z","userId":"vI1GMkzBza5i82zj"}
+{"_id":"b3","title":"1984","price":25,"sold":false,"launchDate":"2019-06-08T00:00:00.000Z","userId":"vI1GMkzBza5i82zj"}
+{"_id":"b4","title":"Brave New World","price":32,"sold":true,"launchDate":"2022-02-10T00:00:00.000Z","userId":"vI1GMkzBza5i82zj"}
+{"_id":"b5","title":"The Catcher in the Rye","price":27.75,"sold":false,"launchDate":"2021-05-20T00:00:00.000Z","userId":"vI1GMkzBza5i82zj"}
+{"_id":"b6","title":"Moby Dick","price":41.2,"sold":true,"launchDate":"2023-09-01T00:00:00.000Z","userId":"vI1GMkzBza5i82zj"}
+{"_id":"b7","title":"Pride and Prejudice","price":33,"sold":false,"launchDate":"2024-01-05T00:00:00.000Z","userId":"vI1GMkzBza5i82zj"}
+{"_id":"b8","title":"The Lord of the Rings","price":59.99,"sold":true,"launchDate":"2018-12-19T00:00:00.000Z","userId":"vI1GMkzBza5i82zj"}
+{"_id":"b9","title":"Harry Potter and the Philosopher's Stone","price":45.5,"sold":false,"launchDate":"2020-10-01T00:00:00.000Z","userId":"vI1GMkzBza5i82zj"}
