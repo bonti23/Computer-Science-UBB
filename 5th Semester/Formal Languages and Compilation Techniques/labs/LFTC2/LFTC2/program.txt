@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double raza, pi=3.14;
+    cout << "Introduceti raza cercului: ";
+    cin >> raza;
+    double aria = pi * raza * raza;
+    double perimetru = 2 * pi * raza;
+    cout << "Aria cercului este: " << aria << endl;
+    cout << "Perimetrul cercului este: " << perimetru << endl;
+    return 0;
+}

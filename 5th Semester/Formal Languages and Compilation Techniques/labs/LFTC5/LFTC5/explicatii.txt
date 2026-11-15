@@ -1,0 +1,6 @@
+Automat:
+states: list<string>
+alphabet: list<string>
+transitions: dict<tuple<string,string>,set<string>>
+initialState: list<string>
+finalStates: list<string>

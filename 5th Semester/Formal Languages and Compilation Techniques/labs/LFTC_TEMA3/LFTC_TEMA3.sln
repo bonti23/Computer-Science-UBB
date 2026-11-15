@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LFTC_TEMA3", "LFTC_TEMA3\LFTC_TEMA3.vcxproj", "{CDF8FB23-01F3-4216-8B44-94259AC51786}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDF8FB23-01F3-4216-8B44-94259AC51786}.Debug|x64.ActiveCfg = Debug|x64
+		{CDF8FB23-01F3-4216-8B44-94259AC51786}.Debug|x64.Build.0 = Debug|x64
+		{CDF8FB23-01F3-4216-8B44-94259AC51786}.Debug|x86.ActiveCfg = Debug|Win32
+		{CDF8FB23-01F3-4216-8B44-94259AC51786}.Debug|x86.Build.0 = Debug|Win32
+		{CDF8FB23-01F3-4216-8B44-94259AC51786}.Release|x64.ActiveCfg = Release|x64
+		{CDF8FB23-01F3-4216-8B44-94259AC51786}.Release|x64.Build.0 = Release|x64
+		{CDF8FB23-01F3-4216-8B44-94259AC51786}.Release|x86.ActiveCfg = Release|Win32
+		{CDF8FB23-01F3-4216-8B44-94259AC51786}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EAC6D89-2D18-407C-8E35-D3585E6EB43E}
+	EndGlobalSection
+EndGlobal
