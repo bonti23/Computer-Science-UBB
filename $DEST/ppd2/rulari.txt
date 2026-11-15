@@ -1,0 +1,2 @@
+g++ -std=c++11 -pthread DynamicMatrices.cpp main.cpp -o ppd2.exe
+.\ppd2.ex
