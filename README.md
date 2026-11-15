@@ -21,7 +21,12 @@ Over the past 2 years, I have had the opportunity to work on my passion for **Co
   - **Design and Programming Environments** (Java, C#)
   - **Software Systems Engineering** (Java)
 - **Fifth Semester**
-  
+  - **Cloud Architecture Application**
+  - **Formal Languages and Compilation Techniques**
+  - **Mobile Device Programming**
+  - **Parallel and Distributed Programming**
+- **Sixth Semester**
+  - **Numerical Analysis**
 
 This repository serves as a reflection of my growth and progress as I continue to deepen my knowledge in the field.
 
