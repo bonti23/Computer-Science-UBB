@@ -1,0 +1,19 @@
+#ifndef TEMA_3_STANDARDCLASICCALCULATION_H
+#define TEMA_3_STANDARDCLASICCALCULATION_H
+
+class StandardClassicCalculation {
+private:
+    int P;
+    int N_Max;
+public:
+    StandardClassicCalculation(const int P, const int N_Max) {
+        this->P = P;
+        this->N_Max = N_Max;
+    }
+    void run();
+    void calculator(int rank);
+    int sum(const int *firstNumber, const int *secondNumber, int *result, int size);
+    void passCarry(int* number,int size,int &carry);
+};
+
+#endif //TEMA_3_STANDARDCLASICCALCULATION_H
