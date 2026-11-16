@@ -5,6 +5,9 @@ Over 3 years, I have had the opportunity to work on my passion for **Computer Sc
 - **First Semester:**
   - **Fundamentals of Programming** (Python)
   - **Architecture of the Computer System**  (Assembly)
+  - **Mathematical Analysis**
+  - **Computational Logic**
+  - **Algebra**
 - **Second Semester**
   - **Object Oriented Programming** (C, C++)
   - **Data Structures and Algorithms** (C++)
@@ -17,6 +20,7 @@ Over 3 years, I have had the opportunity to work on my passion for **Computer Sc
   - **Databases** (SQL)
   - **Logical and Functional Programming** (Prolog, Lisp)
   - **Probability and Statistics** (Python)
+  - **Computer Networks**
 - **Fourth Semester**
   - **Web Programming** (HTML, CSS, JavaScript)
   - **Artificial Intelligence** (Python)
@@ -29,6 +33,7 @@ Over 3 years, I have had the opportunity to work on my passion for **Computer Sc
   - **Mobile Device Programming**
   - **Parallel and Distributed Programming**
   - **Intelligent Methods For Solving Real Problems**
+  - **Research Project**
 - **Sixth Semester**
   - **Numerical Analysis**
   - **Verification And Validation Of Software Systems**
