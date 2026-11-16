@@ -25,6 +25,7 @@ Over 3 years, I have had the opportunity to work on my passion for **Computer Sc
   - **Formal Languages and Compilation Techniques**
   - **Mobile Device Programming**
   - **Parallel and Distributed Programming**
+  - **Intelligent Methods For Solving Real Problems**
 - **Sixth Semester**
   - **Numerical Analysis**
 
