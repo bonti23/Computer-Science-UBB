@@ -9,6 +9,9 @@ Over 3 years, I have had the opportunity to work on my passion for **Computer Sc
   - **Object Oriented Programming** (C, C++)
   - **Data Structures and Algorithms** (C++)
   - **Graph Algorithms** (C++)
+  - **Geometry**
+  - **Dynamical Systems**
+  - **Operating Systems**
 - **Third Semester**
   - **Advanced Programming Methods** (Java, C#)
   - **Databases** (SQL)
