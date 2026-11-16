@@ -34,6 +34,8 @@ Over 3 years, I have had the opportunity to work on my passion for **Computer Sc
   - **Verification And Validation Of Software Systems**
   - **History of Computer Science**
   - **Understanding and Implementing Large Linguistic Models (LLMs)**
+  - **Techniques for Creating Intelligent Systems**
+  - **Elaboration of the Bachelor's Thesis**
 
 This repository serves as a reflection of my growth and progress as I continue to deepen my knowledge in the field.
 
