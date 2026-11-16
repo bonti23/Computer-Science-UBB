@@ -28,6 +28,8 @@ Over 3 years, I have had the opportunity to work on my passion for **Computer Sc
   - **Intelligent Methods For Solving Real Problems**
 - **Sixth Semester**
   - **Numerical Analysis**
+  - **Verification And Validation Of Software Systems**
+  - **History of Computer Science**
 
 This repository serves as a reflection of my growth and progress as I continue to deepen my knowledge in the field.
 
